@@ -11,7 +11,7 @@ const task = () => {
         .pipe(sassGlob())
         .pipe(plumber())
         .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
-        .pipe(sass({outputStyle: 'expanded'}))
+        .pipe(sass({outputStyle: 'compressed'}))
         .pipe(gulp.dest('dist/css'))
         .pipe(gulp.dest('dist/css', {sourcemaps: true}))
 }
