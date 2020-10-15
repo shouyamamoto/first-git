@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "12.19.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,6 +22,7 @@
   "homepage": "https://github.com/shouyamamoto/first-git#readme",
   "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^4.1.0",

@@ -12,11 +12,12 @@ const task = () => {
         .pipe(plumber())
         .pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
         .pipe(sass({outputStyle: 'compressed'}))
-        .pipe(gulp.dest('dist/css'))
-        .pipe(gulp.dest('dist/css', {sourcemaps: true}))
+        .pipe(dest('dist/css'))
+        .pipe(dest('dist/css', {sourcemaps: true}))
 }
 
 const keiryoWatch = () => {
-    gulp.watch('sass/*.scss', task)
+    watch('sass/*.scss', task)
 }
 exports.keiryoWatch = keiryoWatch;
+
